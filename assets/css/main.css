@@ -156,23 +156,23 @@ footer, header, hgroup, menu, nav, section {
 					}
 
 			.tiles article.style1 > .image:after {
-				background-color: #f2849e;
+				background-color: #84f0f2;
 				opacity: 0;
 			}
 			.tiles article.style2 > .image:after {
-				background-color: #e1f284;
+				background-color: #f1a4d5;
 				opacity: 0;
 			}
 			.tiles article.style3 > .image:after {
-				background-color: #84f2a5;
+				background-color: #f28486;
 				opacity: 0;
 			}
 			.tiles article.style4 > .image:after {
-				background-color: #84f2e9;
+				background-color: #222222;
 				opacity: 0;
 			}
 			.tiles article.style5 > .image:after {
-				background-color: #f2b584;
+				background-color: #84ee96;
 				opacity: 0;
 			}
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2853,6 +2853,11 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+		}
+		.image.center{
+	 	   display: flex;
+  		   justify-content: center;
+ 		   width: 50%;
 		}
 
 		.image.left, .image.right {
