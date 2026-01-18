@@ -1,8 +1,2 @@
-## Projects
-### Project 1
-- Description
-- Links
+## Portfolio
 
-### Project 2
-- Description
-- Links
