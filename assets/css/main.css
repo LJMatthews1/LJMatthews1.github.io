@@ -132,7 +132,7 @@ footer, header, hgroup, menu, nav, section {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #000000 !important;
 				}
 				.tiles article > a h2 {
 					margin: 0;
@@ -169,7 +169,7 @@ footer, header, hgroup, menu, nav, section {
 				opacity: 0;
 			}
 			.tiles article.style4 > .image:after {
-				background-color: #222222;
+				background-color: #b984f2;
 				opacity: 0;
 			}
 			.tiles article.style5 > .image:after {
@@ -406,7 +406,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
