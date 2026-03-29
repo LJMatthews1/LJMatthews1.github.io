@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Snakeskin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<style>
+			/* Keep floated project images from collapsing the section and footer layout. */
+			section.post::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.project-section-title {
+				clear: both;
+			}
+
+			.project-image {
+				max-width: 36%;
+			}
+
+			@media screen and (max-width: 736px) {
+				.project-image {
+					float: none;
+					display: block;
+					max-width: 100%;
+					margin: 0 0 1.5rem 0;
+				}
+			}
+
+			.special-thanks {
+				clear: both;
+				margin-top: 2rem;
+			}
+
+			.special-thanks-grid {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 1.5rem;
+			}
+
+			.special-thanks-card {
+				border: solid 1px #e6e6e6;
+				border-radius: 0.5rem;
+				padding: 1.25rem;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.special-thanks-card img {
+				width: 7.5rem;
+				height: 7.5rem;
+				object-fit: cover;
+				border-radius: 50%;
+				margin: 0 auto 0.75rem auto;
+				display: block;
+			}
+
+			.special-thanks-card h3 {
+				margin: 0 0 0.35rem 0;
+				font-size: 1rem;
+				min-height: 2.4rem;
+			}
+
+			.special-thanks-card p {
+				margin: 0.25rem 0 0.75rem 0;
+				font-size: 0.9rem;
+				text-align: center;
+				min-height: 1.6rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.special-thanks-link {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				font-size: 1.2rem;
+				margin-top: auto;
+			}
+
+			@media screen and (max-width: 980px) {
+				.special-thanks-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="../index.html">Overview</a></li>
+					<li><a href="../undergraduate.html">Undergraduate</a></li>
+					<li class="active"><a href="../postgraduate.html">Postgraduate</a></li>
+					<li><a href="../industry.html">Industry</a></li>
+					<li><a href="../hobby.html">Hobby</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/lewis-m-a68b77252/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/LJMatthews1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.youtube.com/@LewisMatthewsProjects" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<h1>Anisotropic Skin for Lunar Snake Robots</h1>
+					</header>
+					<h2 class="project-section-title">Overview</h2>
+					<article>
+						<a class="image right project-image"><img src="../images/Postgraduate/Snake/NasaJPL.png" alt="" /></a>
+					</article>
+					<p>
+						<b>Project Type:</b> Team <br>
+						<b>Duration:</b> 12 Weeks <br>
+						<b>Position:</b> Project Manager and Designer <br>
+						<b>Time:</b> Spring 2026 <br>
+						Snake robots offer strong potential for exploration in confined and extreme environments
+						such as lunar caves, where conventional wheeled systems struggle. A key limitation,
+						however, is the lack of directional friction required for efficient locomotion and climbing.
+						The work we proposed was a combination of anisotropic snakeskin inspired by biological
+						snakes and gecko adhesive systems, aimed at achieving high friction in one direction and
+						low friction in the other while enabling passive dust mitigation.
+						Simulation studies were carried out, then physical prototypes were manufactured using
+						silicone casting and tested on an adjustable incline rig that mimics lunar terrain.
+						We had fortnightly meetings with the team at NASA JPL to discuss findings and propose
+						new design ideas to progress the project further.
+
+					</p>
+
+					<h2 class="project-section-title">Design Process</h2>
+					<p><span class="image left project-image"><img src="../images/Postgraduate/Snake/SnakeskinDesign.png" alt="" /></span>
+						Initially my role focused on optimizing theta and alpha for the macro aspect of the design.
+						I did this in ANSYS using a transient structural model until high reverse-direction friction
+						was achieved while still limiting forward-direction friction.
+
+						Theory only takes you so far, so the snakeskin was then manufactured using Dragonskin 30
+						silicone. This material would not be appropriate for lunar environments as silicone can
+						become brittle, so a future route could be thin-wall titanium, though this was beyond our
+						available budget and manufacturing capabilities.
+
+						I then staggered the snakeskin spikes to test whether this improved performance on the
+						lunar terrain rig that I designed.
+
+					</p>
+
+					<h2 class="project-section-title">End Result</h2>
+					<p><span class="image right project-image"><img src="../images/Postgraduate/Snake/SnakeskinFinal.png" alt="" /></span>
+						The final snakeskin remained stable up to a 65-degree incline with no load. However,
+						the dust-mitigation concept of the micro stalks did not perform as intended and instead
+						captured sand grains. Once a few grains were trapped between stalks, they became locked in place.
+						Even so, the study established a strong starting point for anisotropic snakeskin designs,
+						as anisotropic behavior was clearly observed on the terrain rig by measuring drag force
+						in both directions.
+
+					</p>
+
+					<section class="special-thanks">
+						<h2 class="project-section-title">Special Thanks</h2>
+						<div class="special-thanks-grid">
+							<article class="special-thanks-card">
+								<a href="https://uk.linkedin.com/in/thrishantha" target="_blank" rel="noopener noreferrer">
+									<img src="../images/Postgraduate/Snake/Thrish.jpeg" alt="Thrishantha LinkedIn profile photo" />
+								</a>
+								<h3>Thrishantha Nanayakkara</h3>
+								<p>Imperial College London</p>
+								<a href="https://uk.linkedin.com/in/thrishantha" class="icon brands alt fa-linkedin special-thanks-link" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+							</article>
+							<article class="special-thanks-card">
+								<a href="https://www.linkedin.com/in/kalind" target="_blank" rel="noopener noreferrer">
+									<img src="../images/Postgraduate/Snake/Kalind.jpeg" alt="Kalind Carpenter LinkedIn profile photo" />
+								</a>
+								<h3>Kalind Carpenter</h3>
+								<p>NASA JPL</p>
+								<a href="https://www.linkedin.com/in/kalind" class="icon brands alt fa-linkedin special-thanks-link" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+							</article>
+							<article class="special-thanks-card">
+								<a href="https://www.linkedin.com/in/changrak-choi-b5893627" target="_blank" rel="noopener noreferrer">
+									<img src="../images/Postgraduate/Snake/Changrak.jpeg" alt="Changrak LinkedIn profile photo" />
+								</a>
+								<h3>Changrak Choi</h3>
+								<p>NASA JPL</p>
+								<a href="https://www.linkedin.com/in/changrak-choi-b5893627" class="icon brands alt fa-linkedin special-thanks-link" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+							</article>
+						</div>
+					</section>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/lewis-m-a68b77252/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/LJMatthews1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.youtube.com/@LewisMatthewsProjects" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+		</div>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

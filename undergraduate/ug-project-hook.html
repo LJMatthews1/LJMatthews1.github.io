@@ -9,7 +9,7 @@
 		<title>Compliant Upper-Body Split Hook</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<style>
 			.hook-hero-image {
 				margin: 0 0 1.5rem 2rem;
@@ -47,8 +47,77 @@
 					max-width: 100%;
 				}
 			}
+
+			.hook-tab-panel {
+				display: none;
+			}
+
+			.hook-tab-panel.is-active {
+				display: block;
+			}
+
+			.hook-special-thanks {
+				margin-top: 1.25rem;
+			}
+
+			.hook-special-thanks-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5rem;
+			}
+
+			.hook-special-thanks-card {
+				border: solid 1px #e6e6e6;
+				border-radius: 0.5rem;
+				padding: 1.25rem;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.hook-special-thanks-card img {
+				width: 7.5rem;
+				height: 7.5rem;
+				object-fit: cover;
+				border-radius: 50%;
+				margin: 0 auto 0.75rem auto;
+				display: block;
+			}
+
+			.hook-special-thanks-card h3 {
+				margin: 0 0 0.35rem 0;
+				font-size: 1rem;
+				min-height: 2.4rem;
+			}
+
+			.hook-special-thanks-card p {
+				margin: 0.25rem 0 0.75rem 0;
+				font-size: 0.9rem;
+				text-align: center;
+				min-height: 1.6rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.hook-special-thanks-link {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				font-size: 1.2rem;
+				margin-top: auto;
+			}
+
+			@media screen and (max-width: 980px) {
+				.hook-special-thanks-grid {
+					grid-template-columns: 1fr;
+				}
+			}
 		</style>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -58,11 +127,11 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Overview</a></li>
-							<li><a href="undergraduate.html">Undergraduate</a></li>
-							<li><a href="postgraduate.html">Postgraduate</a></li>
-							<li><a href="industry.html">Industry</a></li>
-							<li><a href="hobby.html">Hobby</a></li>
+							<li><a href="../index.html">Overview</a></li>
+							<li class="active"><a href="../undergraduate.html">Undergraduate</a></li>
+							<li><a href="../postgraduate.html">Postgraduate</a></li>
+							<li><a href="../industry.html">Industry</a></li>
+							<li><a href="../hobby.html">Hobby</a></li>
 						</ul>
 					</nav>
 
@@ -74,9 +143,15 @@
 								<header class="major">
 									<h1>Compliant Upper-Body<br />
 									Split-Hook</h1>
+									<ul class="actions fit small hook-tab-controls" style="margin-top: 1.5rem;">
+										<li><button type="button" class="button primary" data-hook-tab="undergrad">Undergraduate</button></li>
+										<li><button type="button" class="button" data-hook-tab="postgrad">Postgraduate</button></li>
+									</ul>
 								</header>
-								<h2>Overview &amp; Right</h2>
-								<span class="image right hook-hero-image"><img src="images/Undergraduate/Hook/SteeperSplitHook.png" alt="" /></span>
+
+								<div id="hook-undergrad" class="hook-tab-panel is-active">
+								<h2>Overview</h2>
+								<span class="image right hook-hero-image"><img src="../images/Undergraduate/Hook/SteeperSplitHook.png" alt="" /></span>
 								<p>
 									<b>Project Type:</b> Individual Dissertation <br>
 									<b>Duration:</b> 25 weeks <br>
@@ -87,7 +162,7 @@
 								</p>
 
 								<h2 class="hook-section-gap">Design Process</h2>
-								<p><span class="image left"><img src="images/Undergraduate/Hook/InitialDesign.png" alt="" /></span>
+								<p><span class="image left"><img src="../images/Undergraduate/Hook/InitialDesign.png" alt="" /></span>
 									A better-designed compliant split hook would allow amputees to interact with everyday objects and complete activities more easily, lessening the learning curve for new amputees. The hook would also need to offer an aesthetic improvement and not just an improvement to functionality by increasing the variety of objects that can be manipulated with it.
 									The process consists of design, testing with Alex Lewis and able-bodied people to gain insight into the learning curve effect, scoring their ability to complete certain tasks, then redesigning and starting the process all over again.
 									This allowed me to rapidly produce various design ideas that are appropriate for the end-user.
@@ -98,7 +173,7 @@
 								</p>
 
 								<h2 class="hook-section-gap">End Result</h2>
-								<p><span class="image right"><img src="images/Undergraduate/Hook/Iterations.png"  alt="" /></span>
+								<p><span class="image right"><img src="../images/Undergraduate/Hook/Iterations.png"  alt="" /></span>
 									The selected final prototype was a Curved Hook with a lattice structure. Even though the Lattice Hook had a higher final score than the Curved in Phase 2, it really shone in Phase 3 when testing with Alex Lewis. Testing with Able-Bodied people can only take you so far and their views and feedback aren’t shaped in the same way as someone with a limb difference. Overall grade for the report and video presentation was 84%.
 									Project was awarded the Layton Science Research Award for the “best promise of aptitude and genius for original scientific work and for displaying special ability in conducting investigations and solving practical problems.”
 									The journey was incredibly rewarding as what I designed and made will have a direct positive impact on someone’s life.
@@ -107,6 +182,36 @@
 								<h2 class="hook-section-gap">Project Video</h2>
 								<div class="hook-video-wrap">
 									<iframe src="https://www.youtube.com/embed/6K0LetpLPqI" title="Compliant Upper-Body Split Hook Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+
+								<h2 class="hook-section-gap">Special Thanks</h2>
+								<section class="hook-special-thanks">
+									<div class="hook-special-thanks-grid">
+										<article class="hook-special-thanks-card">
+											<img src="../images/Undergraduate/Hook/Nicky.jpeg" alt="Nicola Bailey profile photo" />
+											<h3>Nicola Bailey</h3>
+											<p>Project Supervisor</p>
+											<a href="https://uk.linkedin.com/in/nybailey?original_referer=https%3A%2F%2Fwww.google.com%2F" class="icon brands alt fa-linkedin hook-special-thanks-link" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+										</article>
+										<article class="hook-special-thanks-card">
+											<img src="../images/Undergraduate/Hook/Alex.jpeg" alt="Alex Lewis profile photo" />
+											<h3>Alex Lewis</h3>
+											<p>Co-Designer</p>
+											<a href="https://www.linkedin.com/in/alex-lewis-bb6266143/" class="icon brands alt fa-linkedin hook-special-thanks-link" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+										</article>
+									</div>
+								</section>
+								</div>
+
+								<div id="hook-postgrad" class="hook-tab-panel">
+									<h2>Overview</h2>
+									<p>This postgraduate Split Hook page is intentionally left blank for future content.</p>
+
+									<h2 class="hook-section-gap">Design Process</h2>
+									<p>Placeholder for postgraduate design process content.</p>
+
+									<h2 class="hook-section-gap">End Result</h2>
+									<p>Placeholder for postgraduate outcomes and conclusions.</p>
 								</div>
 
 							</section>
@@ -135,13 +240,39 @@
 			</div>
 -->
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script>
+				(function () {
+					var controls = document.querySelectorAll('[data-hook-tab]');
+					var undergradPanel = document.getElementById('hook-undergrad');
+					var postgradPanel = document.getElementById('hook-postgrad');
+
+					function setActive(tab) {
+						var isUndergrad = tab === 'undergrad';
+						undergradPanel.classList.toggle('is-active', isUndergrad);
+						postgradPanel.classList.toggle('is-active', !isUndergrad);
+
+						controls.forEach(function (btn) {
+							var active = btn.getAttribute('data-hook-tab') === tab;
+							btn.classList.toggle('primary', active);
+						});
+					}
+
+					controls.forEach(function (btn) {
+						btn.addEventListener('click', function () {
+							setActive(btn.getAttribute('data-hook-tab'));
+						});
+					});
+
+					setActive('undergrad');
+				})();
+			</script>
 
 	</body>
 </html>
